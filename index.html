@@ -271,6 +271,11 @@
   <div class="card">
     <div class="pad">
 
+      <!-- WATCH LIVE -->
+<section id="watch">
+  <div class="card">
+    <div class="pad">
+
       <h3>Watch Live</h3>
 
       <p class="lead">
@@ -278,7 +283,7 @@
         When we are live, please use the buttons below to watch in real time.
       </p>
 
-      <!-- OPTIONAL EMBED (non-authoritative) -->
+      <!-- OPTIONAL EMBED (may be blocked by YouTube settings) -->
       <iframe
         class="embed"
         src="https://www.youtube.com/embed/live_stream?channel=UCBrDNyy0dlbtOrubwxBJyPg"
@@ -286,6 +291,10 @@
         loading="lazy"
         referrerpolicy="strict-origin-when-cross-origin">
       </iframe>
+
+      <p class="lead" style="margin-top:14px; opacity:0.9;">
+        If the video above says “unavailable,” please use the buttons below (some livestream settings can block website playback).
+      </p>
 
       <!-- PRIMARY LIVE LINKS -->
       <div style="margin-top:14px; display:flex; gap:12px; flex-wrap:wrap;">
@@ -318,24 +327,35 @@
 </section>
 
 
-  <!-- SERMONS -->
-  <section id="sermons">
+<!-- SERMONS -->
+<section id="sermons">
   <div class="card">
     <div class="pad">
+
       <h3>Sermons & Messages</h3>
-      <p class="lead">Visit our YouTube channel for sermons and previous messages.</p>
+      <p class="lead">
+        Visit our YouTube channel for sermons and previous messages.
+      </p>
 
       <div style="margin-top:14px; display:flex; gap:12px; flex-wrap:wrap;">
-        <a class="btn" href="https://www.youtube.com/@hangoninthereministriesvid7558" target="_blank" rel="noopener">
+        <!-- IMPORTANT: /videos prevents routing to the Live page -->
+        <a class="btn"
+           href="https://www.youtube.com/@hangoninthereministriesvid7558/videos"
+           target="_blank" rel="noopener">
           View Sermons on YouTube
         </a>
-        <a class="btn gold" href="https://www.youtube.com/watch?v=datxd3aM8Rs" target="_blank" rel="noopener">
+
+        <a class="btn gold"
+           href="https://www.youtube.com/watch?v=datxd3aM8Rs"
+           target="_blank" rel="noopener">
           Watch Most Recent Service
         </a>
       </div>
+
     </div>
   </div>
 </section>
+
 
 
   <!-- GIVE -->
