@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hang On In There Ministries | Cleveland, OH</title>
+
+  <meta name="description" content="Hang On In There Ministries — Encouragement, Hope, and a living relationship with Jesus Christ. Cleveland, Ohio." />
+
+  <style>
+    :root{
+      --bg:#0c111a;
+      --panel:#111827;
+      --ink:#eef2ff;
+      --muted:#c7cbe0;
+      --accent:#c7a35a;
+      --line:rgba(255,255,255,.12);
+      --radius:18px;
+      --shadow:0 30px 80px rgba(0,0,0,.45);
+      --max:1120px;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background:
+        radial-gradient(900px 500px at 20% -10%, rgba(122,167,255,.18), transparent 60%),
+        radial-gradient(800px 400px at 90% 0%, rgba(199,163,90,.18), transparent 60%),
+        var(--bg);
+      color:var(--ink);
+      line-height:1.5;
+    }
+
+    a{color:inherit; text-decoration:none}
+    img{max-width:100%; display:block}
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      backdrop-filter: blur(12px);
+      background: rgba(12,17,26,.7);
+      border-bottom:1px solid var(--line);
+    }
+
+    .nav{
+      max-width:var(--max);
+      margin:auto;
+      padding:14px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .brand img{
+      width:44px;
+      height:44px;
+    }
+
+    .brand h1{
+      font-size:15px;
+      margin:0;
+      letter-spacing:.3px;
+    }
+
+    .brand span{
+      display:block;
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    nav a{
+      margin-left:14px;
+      font-size:14px;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      transition:.15s ease;
+    }
+
+    nav a:hover{
+      background:rgba(255,255,255,.08);
+    }
+
+    .wrap{
+      max-width:var(--max);
+      margin:auto;
+      padding:28px 18px 64px;
+    }
+
+    .hero{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:22px;
+      margin-top:28px;
+    }
+
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr}
+    }
+
+    .card{
+      background:rgba(17,24,39,.65);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .pad{padding:26px}
+
+    .kicker{
+      display:inline-block;
+      font-size:12px;
+      padding:6px 12px;
+      border-radius:999px;
+      border:1px solid rgba(199,163,90,.5);
+      background:rgba(199,163,90,.15);
+      margin-bottom:14px;
+    }
+
+    h2{
+      margin:0 0 12px;
+      font-size:32px;
+      line-height:1.15;
+    }
+
+    p.lead{
+      color:var(--muted);
+      font-size:16px;
+      margin:0 0 18px;
+    }
+
+    .btns{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:12px 18px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      font-weight:600;
+      font-size:14px;
+      transition:.15s ease;
+      min-width:160px;
+      text-align:center;
+    }
+
+    .btn.gold{
+      border-color:rgba(199,163,90,.7);
+      background:rgba(199,163,90,.18);
+    }
+
+    .btn.blue{
+      border-color:rgba(122,167,255,.7);
+      background:rgba(122,167,255,.18);
+    }
+
+    .btn:hover{
+      transform:translateY(-1px);
+    }
+
+    .embed{
+      aspect-ratio:16/9;
+      width:100%;
+      border:0;
+      background:#000;
+    }
+
+    section{margin-top:34px}
+
+    h3{
+      margin:0 0 10px;
+      font-size:20px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+    }
+
+    @media(max-width:900px){
+      .grid{grid-template-columns:1fr}
+    }
+
+    footer{
+      margin-top:48px;
+      padding-top:20px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:13px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      justify-content:space-between;
+    }
+
+    footer a{
+      text-decoration:underline;
+      text-decoration-color:rgba(255,255,255,.25);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <img src="church-crest.png" alt="Hang On In There Ministries Crest">
+      <div>
+        <h1>Hang On In There Ministries</h1>
+        <span>Cleveland, Ohio</span>
+      </div>
+    </div>
+    <nav>
+      <a href="#watch">Watch Live</a>
+      <a href="#sermons">Sermons</a>
+      <a href="#give">Give</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="card">
+      <div class="pad">
+        <span class="kicker">Our Mission</span>
+        <h2>Helping people move from religion to relationship.</h2>
+        <p class="lead">
+          Hang On In There Ministries exists to restore hope, strengthen faith, and walk with
+          people through life’s most difficult seasons — helping them build a living relationship
+          with Jesus Christ.
+        </p>
+        <div class="btns">
+          <a class="btn gold" href="#watch">Watch Live</a>
+          <a class="btn blue" href="#give">Ways to Give</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="pastor-charles.jpg" alt="Pastor Charles">
+      <div class="pad">
+        <span class="kicker">Leadership</span>
+        <h3>Pastor Charles</h3>
+        <p class="lead">
+          Pastor Charles leads Hang On In There Ministries with a heart for encouragement,
+          restoration, and spiritual growth — meeting people where they are and guiding them
+          toward a deeper relationship with Christ.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WATCH LIVE -->
+  <section id="watch">
+    <div class="card">
+      <div class="pad">
+        <h3>Watch Live</h3>
+        <p class="lead">Join us live for worship and teaching. When not live, the most recent service will be shown.</p>
+        <iframe
+          class="embed"
+          src="https://www.youtube.com/embed?listType=user_uploads&list=hangoninthereministriesvid7558"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERMONS -->
+  <section id="sermons">
+    <div class="card">
+      <div class="pad">
+        <h3>Sermons & Messages</h3>
+        <p class="lead">Watch full sermons and previous messages from our YouTube channel.</p>
+        <iframe
+          class="embed"
+          src="https://www.youtube.com/embed?listType=user_uploads&list=hangoninthereministriesvid7558"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GIVE -->
+  <section id="give">
+    <div class="card">
+      <div class="pad">
+        <h3>Ways to Give</h3>
+        <p class="lead">
+          Your generosity helps us continue serving the community and sharing hope.
+        </p>
+        <div class="btns">
+          <a class="btn gold" href="#" target="_blank">Give via Givelify</a>
+          <a class="btn blue" href="#" target="_blank">Give via Cash App</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="card">
+      <div class="pad">
+        <h3>Contact & Visit</h3>
+        <p class="lead">
+          19204 Pawnee Ave.<br>
+          Cleveland, OH 44119<br><br>
+          📞 (216) 331-2000<br>
+          📧 hangoninthereministries@yahoo.com
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <div>
+    © <span id="year"></span> Hang On In There Ministries
+  </div>
+  <div>
+    <a href="https://www.facebook.com/100064440201864/" target="_blank">Facebook</a> ·
+    <a href="https://youtube.com/@hangoninthereministriesvid7558" target="_blank">YouTube</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
