@@ -57,3 +57,33 @@ No server configuration or backend maintenance is required.
 
 ## 📁 Project Structure
 
+
+All assets are intentionally kept simple and flat for ease of management.
+
+---
+
+## ✏️ Updating the Site
+
+To make changes:
+1. Edit `index.html`
+2. Commit changes to GitHub
+3. Vercel automatically redeploys the site within seconds
+
+---
+
+## 📍 Organization Information
+
+**Hang On In There Ministries**  
+19204 Pawnee Ave.  
+Cleveland, OH 44119  
+
+📞 (216) 331-2000  
+📧 hangoninthereministries@yahoo.com  
+
+---
+
+## 🤝 Acknowledgment
+
+This site reflects the mission, leadership, and community service of Hang On In There Ministries and is maintained with respect for its spiritual purpose and legacy.
+
+
