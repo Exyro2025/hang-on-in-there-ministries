@@ -411,39 +411,56 @@
   </div>
 </section>
 
-      <!-- WATCH LIVE (Buttons Only) -->
+      <!-- WATCH (LIVE + RECENT SERVICES) -->
 <section id="watch">
   <div class="card">
     <div class="pad">
 
-      <h3>Watch Live</h3>
+      <h3>Watch</h3>
       <p class="lead">
-        Join us live for worship and teaching.
+        Join us live for worship, or watch recent messages below.
       </p>
 
-      <div style="margin-top:14px; display:flex; gap:12px; flex-wrap:wrap;">
+      <!-- Live buttons -->
+      <div class="watch-actions">
         <a class="btn blue"
+           href="https://www.facebook.com/100064440201864/"
+           target="_blank" rel="noopener">
+          Watch Live on Facebook
+        </a>
+
+        <a class="btn"
            href="https://www.youtube.com/@hangoninthereministriesvid7558/live"
            target="_blank" rel="noopener">
           Watch Live on YouTube
         </a>
 
-        <a class="btn"
+        <a class="btn gold"
            href="https://www.youtube.com/@hangoninthereministriesvid7558/videos"
            target="_blank" rel="noopener">
-          Watch Sermons
-        </a>
-
-        <a class="btn gold"
-           href="https://www.youtube.com/@hangoninthereministriesvid7558"
-           target="_blank" rel="noopener">
-          Visit Our YouTube Channel
+          View All Sermons
         </a>
       </div>
+
+      <!-- Embedded recent services feed -->
+      <div class="video-wrap" aria-label="Recent services">
+        <iframe
+          src="https://www.youtube.com/embed?listType=user_uploads&list=hangoninthereministriesvid7558"
+          title="Recent Services"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <p class="micro-note">
+        For the latest updates and livestreams, please visit our YouTube channel.
+      </p>
 
     </div>
   </div>
 </section>
+
 
 <!-- LATEST SERMON (AUTO-UPDATES) -->
 <section id="watch">
