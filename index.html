@@ -427,30 +427,13 @@
         Join us live for worship and teaching. When we are not live, the most recent service will be shown below.
       </p>
 
-      <!-- LIVE PLAYER (only plays when currently live) -->
       <div style="margin-top:16px;">
         <iframe
-          id="ytLive"
           width="100%"
           height="480"
-          src="https://www.youtube.com/embed/live_stream?channel=UC7W6cW9u9J3V9J2X9Lk4QqA&autoplay=0"
+          src="https://www.youtube.com/embed?listType=playlist&list=UU7W6cW9u9J3V9J2X9Lk4QqA"
           frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </div>
-
-      <!-- LATEST SERVICE (always shows latest upload) -->
-      <div style="margin-top:18px;">
-        <h4 style="margin:0 0 10px 0;">Most Recent Service</h4>
-
-        <iframe
-          id="ytLatest"
-          width="100%"
-          height="480"
-          src=""
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
       </div>
@@ -459,31 +442,6 @@
   </div>
 </section>
 
-<script>
-  // ✅ Channel ID
-  const CHANNEL_ID = "UC7W6cW9u9J3V9J2X9Lk4QqA";
-
-  // ✅ Free RSS feed (no API key, no Google Cloud)
-  const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
-
-  fetch(rssUrl)
-    .then(r => r.text())
-    .then(xml => {
-      const match = xml.match(/<yt:videoId>(.*?)<\/yt:videoId>/);
-      if (!match || !match[1]) throw new Error("No videoId found.");
-      const latestId = match[1];
-      document.getElementById("ytLatest").src = `https://www.youtube.com/embed/${latestId}`;
-    })
-    .catch(() => {
-      // Fallback: if something blocks RSS, show channel videos link instead
-      document.getElementById("ytLatest").outerHTML =
-        `<a class="btn gold"
-            href="https://www.youtube.com/@hangoninthereministriesvid7558/videos"
-            target="_blank" rel="noopener">
-           View Latest Sermon on YouTube
-         </a>`;
-    });
-</script>
 
 
 
